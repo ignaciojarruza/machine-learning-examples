@@ -6,6 +6,7 @@ x_train = np.array([1.0, 1.7, 2.0, 2.5, 3.0, 3.2])
 y_train = np.array([250, 300, 480, 430, 630, 730])
 
 
+# J(w,b)
 def compute_cost(x, y, w, b):
     """
     Computes the cost function for linear regression.
@@ -20,13 +21,16 @@ def compute_cost(x, y, w, b):
         linear regression to fit the data points in x and y
     """
     # number of training examples
-    m = len(x)
+    m = x.shape[0]
 
     cost_sum = 0
-    for i in range(x):
+    for i in range(m):
         f_wb = w * x[i] + b
         cost = (f_wb - y[i]) ** 2
         cost_sum += cost
     total_cost = (1 / (2 * m)) * cost_sum
 
     return total_cost
+
+
+print(compute_cost(x_train, y_train, 200.0, 100.0))

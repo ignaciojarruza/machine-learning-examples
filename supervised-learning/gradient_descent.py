@@ -2,13 +2,13 @@
 import math, copy
 import numpy as np
 import matplotlib.pyplot as plt
+from cost_function import compute_cost
 from resources.lab_utils_uni import (
     plt_house_x,
     plt_contour_wgrad,
     plt_divergence,
     plt_gradients,
 )
-from cost_function import compute_cost
 
 # Small data set
 x_train = np.array([1.0, 2.0])

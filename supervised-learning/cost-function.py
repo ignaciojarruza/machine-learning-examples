@@ -34,3 +34,5 @@ def compute_cost(x, y, w, b):
 
 
 print(compute_cost(x_train, y_train, 200.0, 100.0))
+# For interactive visualization examples using Jupyter Notebooks and ipympl, follow Cost Function Visualization Lab from
+# Andrew Ng's Machine Learning Course on Regression/Classification.

@@ -30,7 +30,7 @@ def compute_gradient(x, y, w, b):
     # Number of training examples
     m = x.shape[0]
     dj_dw = 0
-    df_db = 0
+    dj_db = 0
 
     for i in range(m):
         f_wb = w * x[i] + b
@@ -39,7 +39,7 @@ def compute_gradient(x, y, w, b):
         dj_db += dj_db_i
         dj_dw += dj_dw_i
     dj_dw = dj_dw / m
-    dj_db = df_db / m
+    dj_db = dj_db / m
 
     return dj_dw, dj_db
 

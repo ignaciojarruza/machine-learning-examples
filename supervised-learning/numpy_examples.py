@@ -69,3 +69,14 @@ b = np.mean(a)
 print(f"b = np.mean(a): {b}")
 b = a**2
 print(f"b = a**2      : {b}")
+
+# Vector Vector element-wise operations
+a = np.array([1, 2, 3, 4])
+b = np.array([-1, -2, 3, 4])
+print(f"Binary operators work element wise: {a + b}")
+c = np.array([1, 2])
+try:
+    d = a + c
+except Exception as e:
+    print("Error message for mismatched vectors:")
+    print(e)

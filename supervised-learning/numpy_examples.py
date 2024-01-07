@@ -80,3 +80,8 @@ try:
 except Exception as e:
     print("Error message for mismatched vectors:")
     print(e)
+
+# Scalar Vector Operations
+a = np.array([1, 2, 3, 4])
+b = 5 * a
+print(f"b = 5 * a : {b}")
